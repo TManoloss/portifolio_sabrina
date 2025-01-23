@@ -9,11 +9,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F8EDE3;
+    --second: #DFD3C3;
+    --thrd: #D0B8A8;
+    --fourt: #8D493A;
   }
 }
-
+@font-face {
+  font-family: fonteLogo;
+  src: url('../fonts/mote-cainge.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: var(--foreground);
   background: var(--background);

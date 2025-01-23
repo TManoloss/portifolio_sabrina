@@ -8,9 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        fonteLogo: ['"fonteLogo"', 'Lorena']
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        second: "var(--second)",
+        thrd: "var(--thrd)",
+        fourt: "var(--fourt)"
       },
     },
   },

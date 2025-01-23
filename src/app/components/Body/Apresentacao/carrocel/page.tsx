@@ -1,0 +1,45 @@
+"use client"
+
+import React, { useState, useEffect } from 'react';
+import test1 from '../../../../../images/test1.jpg';
+import test2 from '../../../../../images/test2.jpg';
+import test3 from '../../../../../images/test3.jpg';
+
+export default function carrocel() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const images = [
+        test1.src,
+        test2.src,
+        test3.src
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [images.length]);
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
+    return (
+        <div className="relative overflow-hidden">
+            <button onClick={prevImage} className="absolute left-0">Anterior</button>
+            <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                {images.map((image, index) => (
+                    <div className="w-full flex-shrink-0" key={index}>
+                        <img src={image} alt="Carrossel" className="w-full h-1/2 object-cover" />
+                    </div>
+                ))}
+            </div>
+            <button onClick={nextImage} className="absolute right-0">Próximo</button>
+        </div>
+    );
+}
