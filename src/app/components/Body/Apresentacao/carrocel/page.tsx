@@ -30,12 +30,12 @@ export default function carrocel() {
     };
 
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden ">
             <button onClick={prevImage} className="absolute left-0">Anterior</button>
-            <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            <div className="flex transition-transform duration-500 ease-in-out m-0" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {images.map((image, index) => (
                     <div className="w-full flex-shrink-0" key={index}>
-                        <img src={image} alt="Carrossel" className="w-full h-1/2 object-cover" />
+                        <img src={image} alt="Carrossel" className="w-full h-[400px] object-cover" />
                     </div>
                 ))}
             </div>

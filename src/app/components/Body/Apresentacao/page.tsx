@@ -1,9 +1,10 @@
-
 import Carrocel from "./carrocel/page"
 
 
 export default function apresentacao(){
     return(
-        <Carrocel/>
+        <div style={{ width: '100%' }}>
+            <Carrocel/>
+        </div>
     )
 }
