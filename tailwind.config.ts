@@ -9,14 +9,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        fonteLogo: ['"fonteLogo"', 'Lorena']
+        nunito: ['"Nunito"', "sans-serif"], // ✅ Adicionando Nunito corretamente
+        fonteLogo: ['"fonteLogo"', "sans-serif"],
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         second: "var(--second)",
         thrd: "var(--thrd)",
-        fourt: "var(--fourt)"
+        fourt: "var(--fourt)",
       },
     },
   },

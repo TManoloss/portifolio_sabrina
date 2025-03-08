@@ -4,10 +4,15 @@ interface TituloProps {
 }
 
 export default function Titulo({ texto, className }: TituloProps) {
-    return(
+    return (
         <div className="relative w-full">
-            <div className="absolute top-0 left-0 right-0 h-12 bg-fourt -z-10 w-1/5 rounded-r-full" />
-            <h1 className={`p='10px' text-second ${className}`}>{texto}</h1>
+            {/* Barra de fundo */}
+            <div className="absolute top-0 left-0 h-12 bg-fourt -z-10 w-1/5 rounded-r-full" />
+
+            {/* Texto do título com fonte correta */}
+            <h1 className={`text-left text-white font-fonteLogo text-4xl py-2 px-4 ${className}`}>
+                {texto}
+            </h1>
         </div>
-    )
+    );
 }

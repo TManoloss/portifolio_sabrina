@@ -8,10 +8,10 @@ export default function about (){
                 <Titulo texto="Sobre mim"/>
             </div>
            
-            <div className="flex flex-col justify-center items-center px-40">
+            <div className="flex flex-col justify-center items-center pb-20 px-40">
+                <div className="pb-5"><Foto/></div>
                 
-                <Foto/>
-                <Texto/>
+                <div><Texto/></div>
             </div>
         </div>
     )

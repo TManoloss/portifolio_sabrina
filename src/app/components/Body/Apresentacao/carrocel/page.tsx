@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import test1 from '../../../../../images/test1.jpg';
-import test2 from '../../../../../images/test2.jpg';
-import test3 from '../../../../../images/test3.jpg';
+import test1 from '../../../../../images/carrocel/1.png';
+import test2 from '../../../../../images/carrocel/2.png';
+import test3 from '../../../../../images/carrocel/3.png';
 
 export default function carrocel() {
     const [currentIndex, setCurrentIndex] = useState(0);

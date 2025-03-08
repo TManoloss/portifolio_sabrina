@@ -10,14 +10,16 @@ import Titulo_projeto from "../../titulo_projeto/page"
 const MasterComponent = () => {
   return (
     
-    <div >
-      <div className="relative w-full">
-            <Titulo texto="Portfólio" className="mb-4"/>
+    <div className="">
+      <div className="flex justify-center items-center">
+        <div className="relative w-full flex justify-center ">
+            <Titulo texto="Portfólio" className="mb-4 "/>
         </div>
-        <div className="relative w-full">
-            <Titulo_projeto text="✨ Spa" className="mb-4"/>
+      </div>
+        <div className="relative w-full pb-10">
+            <Titulo_projeto text="✨ Spa" className="pt-4 "/>
         </div>
-      <div className="flex h-screen w-full bg-background p-10 gap-6">
+      <div className="flex h-screen w-full bg-background py-0 px-10 pb-4 gap-6">
         {/* Box esquerdo grande (Imagem) */}
         <div className="w-1/3 rounded-2xl overflow-hidden border-2 border-gray-500">
           <img
@@ -40,16 +42,21 @@ const MasterComponent = () => {
           {/* Linhas no meio (Textos e Imagem direita) */}
           <div className="flex flex-row gap-4">
             <div className="flex flex-col gap-4 w-3/4">
-              <p className="flex-1 text-black text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae maximus mi, in facilisis magna. 
-              Nullam eu orci non est condimentum tristique nec eget eros. Aliquam fringilla dolor neque, et elementum 
-              eros malesuada sed. Quisque congue nulla lorem, at efficitur urna venenatis quis. Sed pretium arcu ac 
-              elementum finibus. In hac habitasse platea dictumst. Nam tristique euismod semper. Etiam eu nisl quis 
-              leo tempor dignissim. Praesent molestie sit amet ex a faucibus. Vestibulum ante ipsum primis in faucibus 
-                        </p>
+            <p className="flex-1 text-black text-lg font-nunito text-justify text-indent">
+  Criamos um jardim sensorial para o evento CasaCor, com foco no tato, utilizando lavanda, pedras, madeira, água e grama.
+</p>
+<p className="flex-1 text-black text-lg font-nunito text-justify text-indent">
+  O conceito de "jardim secreto" foi combinado com arquitetura clássica, incluindo um gazebo e um espelho d'água orgânico.
+</p>
+<p className="flex-1 text-black text-lg font-nunito text-justify text-indent">
+  A banheira foi colocada no centro de um gazebo revestido com chukum, criando um ambiente único.
+</p>
+
+
+
             </div>
             {/* Box direito menor (Imagem abaixada) */}
-            <div className="w-full rounded-2xl overflow-hidden mt-6 border-2 border-gray-500">
+            <div className="w-full h-full rounded-2xl overflow-hidden mt-6 border-2 border-gray-500">
               <img
                 src={imagem3.src}
                 alt="Imagem direita"

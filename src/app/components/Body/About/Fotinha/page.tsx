@@ -1,5 +1,5 @@
 import test1 from '../../../../../images/sabrina.png';
-
+import Image from 'next/image'
 export default function foto() {
     return (
         <div>
@@ -12,6 +12,7 @@ export default function foto() {
                     borderRadius: '50%',
                     objectFit: 'cover'
                 }} 
+                
             />
         </div>
     );

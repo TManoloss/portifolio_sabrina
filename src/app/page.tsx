@@ -1,6 +1,6 @@
 import TopBar from "./components/TopBar/page";
 import Body from "./components/Body/page"
-
+import Footer from "./components/Footer/page"
 export default function Home() {
   return (
     <>
@@ -10,6 +10,9 @@ export default function Home() {
       </div>
       <div className="pad-0">
         <Body/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
     </>

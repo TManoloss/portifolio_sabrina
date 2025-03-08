@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+  font-family: "fonteLogo";
+  src: url('../fonts/mote-cainge.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,14 +24,22 @@
     --fourt: #8D493A;
   }
 }
-@font-face {
-  font-family: fonteLogo;
-  src: url('../fonts/mote-cainge.regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 body {
+  @apply font-body; 
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Classes personalizadas */
+.font-logo {
+  font-family: "fonteLogo", sans-serif;
+}
+
+.font-body {
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+.text-indent {
+  text-indent: 1em; /* Ajuste o valor para o tamanho desejado */
+}
+
