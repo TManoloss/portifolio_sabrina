@@ -1,5 +1,4 @@
 import test1 from '../../../../../images/sabrina.png';
-import Image from 'next/image'
 export default function foto() {
     return (
         <div>

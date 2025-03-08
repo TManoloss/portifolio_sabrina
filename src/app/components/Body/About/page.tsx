@@ -1,6 +1,6 @@
 import Foto from "./Fotinha/page"
 import Texto from "./Text/page"
-import Titulo from "../../Titulo/page"
+import Titulo from "../../Titulo/Titulo"
 export default function about (){
     return(
         <div className="w-full">

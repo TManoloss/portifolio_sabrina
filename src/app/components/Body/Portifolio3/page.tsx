@@ -4,7 +4,7 @@ import React from "react";
 import imagem7 from  "../../../../images/second/2.png";
 import imagem8 from  "../../../../images/second/1.png";
 import imagem9 from  "../../../../images/second/3.png";
-import Titulo_projeto from "../../titulo_projeto/page"
+import Titulo_projeto from "../../titulo_projeto/Titulo_projeto"
 
 
 const PortfolioComponent = () => {

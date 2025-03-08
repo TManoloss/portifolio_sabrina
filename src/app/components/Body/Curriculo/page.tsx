@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Titulo from "../../Titulo/page";
+import Titulo from "../../Titulo/Titulo";
 
 const CurriculoTab = () => {
   const experiencias = [

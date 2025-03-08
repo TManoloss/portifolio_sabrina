@@ -4,8 +4,8 @@ import React from "react";
 import imagem1 from "../../../../images/1.png";
 import imagem2 from "../../../../images/2.png";
 import imagem3 from "../../../../images/3.png";
-import Titulo from "../../Titulo/page"
-import Titulo_projeto from "../../titulo_projeto/page"
+import Titulo from "../../Titulo/Titulo"
+import Titulo_projeto from "../../titulo_projeto/Titulo_projeto"
 
 const MasterComponent = () => {
   return (
